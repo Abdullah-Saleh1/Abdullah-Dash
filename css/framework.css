@@ -10,6 +10,9 @@
 .p-10 {
   padding: 10px;
 }
+.p-15 {
+  padding: 15px;
+}
 .p-20 {
   padding: 20px;
 }
@@ -49,4 +52,27 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+.rad-10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.border-c {
+  border: 1px solid #CCC;
+}
 /* End Border */
+/* Start Compononts */
+.between-flex {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+/* End Compononts */
+.w-full {
+  width: 100%;
+}
+
+
+
