@@ -1,9 +1,37 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f5930b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+}
 /* Start Box */
 .d-flex {
   display: flex;
 }
 .align-center {
   align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.d-block {
+  display: block;
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
 }
 /* End Box */
 /* Start Padding + Margin */
@@ -16,19 +44,64 @@
 .p-20 {
   padding: 20px;
 }
+.m-0 {
+  margin: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
 .m-20 {
   margin: 20px;
 }
 .mt-0 {
   margin-top: 0;
 }
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 /* End Padding + Margin */
 /* Start Color */
 .bg-white {
   background-color: #fff;
 }
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-black {
   color: #000;
+}
+.c-white {
+  color: #fff;
+}
+.c-gray {
+  color: var(--gray-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* End Color */
 /* Start Position */
@@ -42,6 +115,14 @@
 }
 .fs-14 {
   font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
 }
 /* End Font */
 /* Start Border */
@@ -62,17 +143,34 @@
 .border-c {
   border: 1px solid #CCC;
 }
+.b-none {
+  border: none;
+}
 /* End Border */
+/* Start Width + Height */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+/* End Width + Height */
 /* Start Compononts */
+.center-flex {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;  
+}
 .between-flex {
   display: flex; 
   align-items: center; 
   justify-content: space-between;
 }
-/* End Compononts */
-.w-full {
-  width: 100%;
+.btn-shape {
+  padding: 4px 10px; 
+  border-radius: 6px;
 }
+/* End Compononts */
 
 
 

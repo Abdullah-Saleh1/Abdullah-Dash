@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="css/framework.css">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/all.min.css">
@@ -87,7 +88,87 @@
       </div>
       <!-- End Head -->
       <h1 class="p-relative">Dashboard</h1>
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Welcome Widget -->
+        <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+          <div class="intro d-flex space-between p-20 bg-eee">
+            <div>
+              <h2 class="m-0 ">Welocme</h2>
+              <p class="c-gray mt-5">Abdullah</p>
+            </div>
+            <img class="hide-mobile" src="images/welcome.png" alt="">
+          </div>
+          <img class="avatar" src="images/avatar.png" alt="">
+          <div class="body bg-white txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+            <div>Abdullah Saleh<span class="d-block cgray fs-14 mt-10">Developer</span></div>
+            <div>80<span class="d-block cgray fs-14 mt-10">Projects</span></div>
+            <div>$8500<span class="d-block cgray fs-14 mt-10">Earned</span></div>
+          </div>
+          <a href="profile.html" class="visit d-block fs-14 c-white bg-blue w-fit btn-shape">Profile</a>
+        </div>
+        <!-- End Welcome Widget -->
+        <!-- Start Quick Draft Widget -->
+        <div class="quick-draft bg-white p-20 rad-10 ">
+          <h2 class="mt-0 mb-10">Quick Draft</h2>
+          <p class="mt-0 mb-20 c-gray fs-15">Write A Draft For Your Ideas</p>
+          <form>
+            <input class="d-block mb-20 rad-6 c-gray bg-eee w-full p-10 b-none" type="text" placeholder="Title">
+            <textarea class="d-block mb-20 rad-6 c-gray bg-eee w-full p-10 b-none" placeholder="Your Thoughts"></textarea>
+            <input class="save d-block b-none btn-shape w-fit bg-blue c-white fs-14" type="submit" value="Save">
+          </form>
+        </div>
+        <!-- End Quick Draft Widget -->
+        <!-- Start Targets -->
+        <div class="targets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Yearly Tragets</h2>
+          <p class="mt-0 mb-20 c-gray fs-15">Tragets Of The Year</p>
+          <div class="target-row mb-20 d-flex align-center blue">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14 c-gray">Money</span>
+              <span class="d-block mt-5 mb-10 fw-bold">$20.000</span>
+              <div class="progress p-relative w-full">
+                <span class="bg-blue blue" style="width: 80%">
+                  <span class="bg-blue">80%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 d-flex align-center orange">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-code fa-lg c-orange"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14 c-gray">Projects</span>
+              <span class="d-block mt-5 mb-10 fw-bold">24</span>
+              <div class="progress p-relative w-full">
+                <span class="bg-orange oragne" style="width: 55%">
+                  <span class="bg-orange">55%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 d-flex align-center green">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-user fa-lg c-green"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14 c-gray">Team</span>
+              <span class="d-block mt-5 mb-10 fw-bold">12</span>
+              <div class="progress p-relative">
+                <span class="bg-green blue" style="width: 75%">
+                  <span class="bg-green">75%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Targets -->
+      </div>
     </div>
   </div>
 </body>
 </html>
+
