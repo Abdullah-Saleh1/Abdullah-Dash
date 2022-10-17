@@ -16,6 +16,9 @@
 .space-between {
   justify-content: space-between;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 .d-grid {
   display: grid;
 }
@@ -44,14 +47,35 @@
 .p-20 {
   padding: 20px;
 }
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
 .m-0 {
   margin: 0;
 }
-.mt-10 {
-  margin-top: 10px;
-}
 .m-20 {
   margin: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
 }
 .mt-0 {
   margin-top: 0;
@@ -59,14 +83,32 @@
 .mt-5 {
   margin-top: 5px;
 }
+.mt-15 {
+  margin-top: 15px;
+}
 .mt-20 {
   margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mb-5 {
+  margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
 }
 /* End Padding + Margin */
 /* Start Color */
@@ -84,6 +126,9 @@
 }
 .bg-green {
   background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
 }
 .c-black {
   color: #000;
@@ -103,6 +148,9 @@
 .c-green {
   color: var(--green-color);
 }
+.c-red {
+  color: var(--red-color);
+}
 /* End Color */
 /* Start Position */
 .p-relative {
@@ -113,11 +161,20 @@
 .txt-c {
   text-align: center;
 }
+.fw-bold {
+  font-weight: bold;
+}
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-15 {
   font-size: 15px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 @media (max-width: 767px) {
   .txt-c-mobile {
@@ -140,6 +197,9 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.rad-half {
+  border-radius: 50%;
+}
 .border-c {
   border: 1px solid #CCC;
 }
@@ -150,6 +210,9 @@
 /* Start Width + Height */
 .w-full {
   width: 100%;
+}
+.h-full {
+  height: 100%;
 }
 .w-fit {
   width: fit-content;
@@ -169,6 +232,11 @@
 .btn-shape {
   padding: 4px 10px; 
   border-radius: 6px;
+}
+.box-style {
+  border-radius: 10px; 
+  padding: 20px; 
+  background-color: #fff;
 }
 /* End Compononts */
 
