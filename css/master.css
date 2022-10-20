@@ -409,14 +409,6 @@ i::before {
 .last-project ul .current::before {
   animation: change-color 0.8s linear infinite alternate; 
 }
-@keyframes change-color {
-  0% {
-    background-color: var(--blue-color);
-  }
-  100% {
-    background-color: #fff;
-  }
-}
 .last-project img {
   position: absolute; 
   width: 160px; 
@@ -543,6 +535,17 @@ i::before {
   background-color: #faf7f7;
 }
 /* End Projects Table */
-
+/* Start Settings */
+/* End Settings */
+/* Start Animation */
+@keyframes change-color {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: var(--blue-color);
+  }
+}
+/* End Animation */
 
 
