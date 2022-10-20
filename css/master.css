@@ -536,6 +536,23 @@ i::before {
 }
 /* End Projects Table */
 /* Start Settings */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.settings-page .close-message {
+  border: 1px solid #ccc; 
+  resize: none; 
+  min-height: 150px;
+}
+.settings-page :disabled {
+  cursor: no-drop; 
+  background-color: #f0f4f8; 
+  color: #bbb;
+}
+.settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 80px); 
+}
 /* End Settings */
 /* Start Animation */
 @keyframes change-color {
