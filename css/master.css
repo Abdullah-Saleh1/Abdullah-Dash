@@ -553,6 +553,89 @@ i::before {
   display: inline-flex;
   width: calc(100% - 80px); 
 }
+.settings-page .sec-box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.settings-page .social-boxes > div {
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.settings-page .social-boxes input {
+  background-color: #f6f6f6; 
+  color: #000;
+}
+.settings-page .social-boxes > div i {
+  width: 40px; 
+  height: 40px; 
+  background-color: #f6f6f6; 
+  border-right: 1px solid #ddd;
+  transition: .3s; 
+  font-weight: 900; 
+}
+.settings-page .social-boxes > div:focus-within i {
+  color: #000;
+}
+.settings-page .widgets-control .control input {
+  -webkit-appearance: none; 
+  appearance: none;
+}
+.settings-page .widgets-control .control label {
+  padding-left: 30px; 
+  cursor: pointer; 
+  position: relative;
+}
+.settings-page .widgets-control .control label::before, 
+.settings-page .widgets-control .control label::after {
+  position: absolute;
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  border-radius: 4px;
+}
+.settings-page .widgets-control .control label::before {
+  content: ''; 
+  width: 14px; 
+  height: 14px; 
+  border: 2px solid var(--gray-color);
+}
+.settings-page .widgets-control .control input + label::after {
+  content: '\f00c';
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: #fff;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  transform: translateY(-50%) scale(0) rotate(360deg); 
+  transition: 0.3s;
+}
+.settings-page .widgets-control .control input:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+.settings-page .backup-control {
+  margin-bottom: 350px;
+}
+.settings-page .backup-control .control input {
+  -webkit-appearance: none; 
+  appearance: none;
+}
+.settings-page .backup-control .control label::before,
+.settings-page .backup-control .control label::after {
+  content: '';
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.settings-page .backup-control .control label::before {
+  width: 14px; 
+  height: 14px; 
+  border: 2px solid var(--blue-color);
+}
 /* End Settings */
 /* Start Animation */
 @keyframes change-color {

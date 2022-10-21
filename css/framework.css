@@ -19,6 +19,9 @@
 .f-wrap {
   flex-wrap: wrap;
 }
+.flex-1 {
+  flex: 1;
+}
 .d-grid {
   display: grid;
 }
