@@ -539,6 +539,15 @@ i::before {
 .settings-page {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
+@media (max-width: 767px) {
+  .settings-page {
+    /* Not repeat(auto-fill) Because It's One Single Column */
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px; 
+    margin-right: 10px; 
+    gap: 10px;
+  }
+}
 .settings-page .close-message {
   border: 1px solid #ccc; 
   resize: none; 
@@ -615,12 +624,14 @@ i::before {
 .settings-page .widgets-control .control input:checked + label::after {
   transform: translateY(-50%) scale(1);
 }
-.settings-page .backup-control {
-  margin-bottom: 350px;
-}
 .settings-page .backup-control .control input {
   -webkit-appearance: none; 
   appearance: none;
+}
+.settings-page .backup-control .control label {
+  padding-left: 30px; 
+  position: relative; 
+  cursor: pointer;
 }
 .settings-page .backup-control .control label::before,
 .settings-page .backup-control .control label::after {
@@ -632,9 +643,43 @@ i::before {
   border-radius: 50%;
 }
 .settings-page .backup-control .control label::before {
-  width: 14px; 
-  height: 14px; 
+  width: 18px; 
+  height: 18px; 
   border: 2px solid var(--blue-color);
+}
+.settings-page .backup-control .control label::after {
+  width: 12px;
+  height: 12px;
+  left: 5px;
+  background-color: var(--blue-color);
+  transform: translateY(-50%) scale(0);
+  transition: .3s;
+}
+.settings-page .backup-control .control input:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+.settings-page .backup-control .servers {
+  padding-top: 20px; 
+  border-top: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .settings-page .backup-control > .servers {
+    flex-direction: column;
+  }
+}
+.settings-page .backup-control .servers input {
+  -webkit-appearance: none; 
+  appearance: none;
+}
+.settings-page .backup-control .servers .server {
+  border: 2px solid #eee;
+}
+.settings-page .backup-control .servers .server label {
+  cursor: pointer; 
+}
+.settings-page .backup-control .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
 }
 /* End Settings */
 /* Start Animation */
