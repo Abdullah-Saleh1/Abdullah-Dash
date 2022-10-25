@@ -682,6 +682,73 @@ i::before {
   color: var(--blue-color);
 }
 /* End Settings */
+/* Start Profile */
+.profile-page .overview {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column; 
+  }
+}
+.profile-page .overview .avatar-box {
+  width: 300px;
+}
+@media (min-width: 767px) {
+  .profile-page .overview .avatar-box {
+    border-right: 1px solid #eee; 
+  }
+}
+.profile-page .overview .avatar-box .avatar {
+  width: 120px; 
+  height: 120px; 
+}
+.profile-page .avatar-box > ul {
+  gap: 5px;
+}
+.profile-page .overview .avatar-box .progress {
+  width: 70%; 
+  height: 6px; 
+  margin: auto;
+}
+.profile-page .overview .avatar-box .progress span {
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  background-color: var(--blue-color);
+  height: 100%; 
+  border-radius: 6px;
+}
+.profile-page .box {
+  transition: .3s; 
+}
+.profile-page .box:not(:last-child) {
+  border-bottom: 1px solid #eee; 
+}
+.profile-page .box:hover {
+  background-color: #eee;
+}
+.profile-page .box > h4 {
+  font-weight: normal;
+}
+.profile-page .box > div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+.profile-page .toggle-switch {
+  height: 20px; 
+  width: 78px;
+
+}
+.profile-page .toggle-switch::before {
+  width: 12px; 
+  height: 12px;
+  font-size: 8px;
+}
+.profile-page .toggle-switch:checked::before {
+  left: 62px; 
+}
+/* End Profile */
 /* Start Animation */
 @keyframes change-color {
   0% {
