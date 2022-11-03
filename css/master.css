@@ -722,6 +722,11 @@ i::before {
 .profile-page .box {
   transition: .3s; 
 }
+@media (max-width: 767px) {
+  .profile-page .box {
+    justify-content: center; 
+  }
+}
 .profile-page .box:not(:last-child) {
   border-bottom: 1px solid #eee; 
 }
@@ -747,6 +752,47 @@ i::before {
 }
 .profile-page .toggle-switch:checked::before {
   left: 62px; 
+}
+.profile-page .my-skill-card {
+  flex-grow: 1;
+}
+.profile-page .my-skill-card ul > li {
+  padding: 15px 0;
+}
+.profile-page .my-skill-card ul > li:not(:last-child) {
+  border-bottom: 1px solid #eee
+}
+.profile-page .my-skill-card ul > li > span {
+  padding: 4px 10px; 
+  background-color: #eee; 
+  border-radius: 6px; 
+  display: inline-flex; 
+  font-size: 14px;
+}
+.profile-page .my-skill-card ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .profile-page .my-skill-card li {
+    justify-content: center;
+  }
+}
+.profile-page .activities {
+  flex-grow: 2;
+}
+.profile-page .activities .activity:not(:last-child) {
+  padding-bottom: 20px; 
+  margin-bottom: 20px; 
+  border-bottom: 1px solid #eee;
+}
+.profile-page .activities .activity img {
+  width: 64px; 
+  height: 64px; 
+  margin-right: 10px;
+}
+.profile-page .activities .activity .date {
+  margin-left: auto; 
+  text-align: right;
 }
 /* End Profile */
 /* Start Animation */
