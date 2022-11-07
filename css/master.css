@@ -805,7 +805,96 @@ i::before {
 /* End Profile */
 /* Start Projects */
 .projects-page {
-
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
+}
+@media (max-width: 767px) {
+  .projects-page {
+    margin: 20px 10px; 
+    gap: 10px;
+  }
+}
+.projects-page .project .date,
+.final-project .project .date {
+  position: absolute; 
+  top: 10px; 
+  right: 10px;
+}
+.projects-page .project h4, 
+.final-project .project h4 {
+  font-weight: normal;
+}
+.projects-page .project .team, 
+.final-project .project .team {
+  min-height: 80px;
+}
+.projects-page .project .team a, 
+.final-project .project .team a {
+  position: absolute; 
+  left: var(--left); 
+  bottom: 0;
+}
+.projects-page .project .team a:hover, 
+.final-project .project .team a:hover {
+  z-index: 2;
+}
+.projects-page .project .team a img, 
+.final-project .project .team a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.projects-page .project .do, 
+.final-project .project .do {
+  justify-content: flex-end;
+  gap: 5px;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+    .projects-page .project .do, 
+    .final-project .project .do {
+      flex-direction: column;
+      gap: 15px;
+      /*
+      The Elements Take The Full Width Because The align-items Is
+      Set To "stretch" So We'll Set It To flex-start Or start
+      */
+      align-items: flex-start;
+    }
+}
+.projects-page .project .do span, 
+.final-project .project .do span {
+  padding: 3px 8px;
+}
+.projects-page .project .info, 
+.final-project .project .info {
+  border-top: 1px solid #eee; 
+  padding-top: 15px;
+}
+.projects-page .project .info .progress-bar, 
+.final-project .project .info .progress-bar {
+  width: 260px;
+  height: 8px;
+}
+@media (max-width: 767px) {
+  .projects-page .project .info, 
+  .final-project .project .info {
+    flex-direction: column
+    /*
+    They Centered Horizontally Because The align-center 
+    Is Set To Center From between-flex On Frameword 
+    */
+  }
+  .projects-page .project .info .progress-bar, 
+  .final-project .project .info .progress-bar {
+    margin-bottom: 15px;
+  }  
+}
+.projects-page .project .info .progress-bar span,
+.final-project .project .info .progress-bar span {
+  position: absolute; 
 }
 /* End Projects */
 /* Start Animation */
