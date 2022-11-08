@@ -896,6 +896,7 @@ i::before {
 .final-project .project .info .progress-bar span {
   position: absolute; 
 }
+/* End Projects */
 /* Start Courses Page */
 .courses-page {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
@@ -908,8 +909,49 @@ i::before {
     gap: 10px;
   }
 }
-/* Start End Page */
-/* End Projects */
+.courses-page .course {
+  padding: 0;
+}
+.courses-page .course .instructor { 
+  position: absolute; 
+  top: 20px; 
+  left: 20px;
+  width: 64px;
+  height: 64px; 
+  border: 2px solid #fff; 
+  border-radius: 50%;
+}
+.courses-page .cover {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 100%;
+}
+.courses-page .info {
+  border-top: 1px solid #eee; 
+}
+.courses-page .info .title {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.courses-page .info i.fa-regular::before {
+  font-weight: 400;
+}
+/* End Courses Page */
+/* Start Friends Page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+@media (max-width: 767px) {
+  .friends-page {
+    margin-left: 10px; 
+    margin-right: 10px; 
+    gap: 10px;
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+/* End Friends Page */
 /* Start Animation */
 @keyframes change-color {
   0% {
