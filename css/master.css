@@ -809,6 +809,7 @@ i::before {
 }
 @media (max-width: 767px) {
   .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
     margin: 20px 10px; 
     gap: 10px;
   }
