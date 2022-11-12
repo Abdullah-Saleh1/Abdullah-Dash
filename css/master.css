@@ -396,6 +396,8 @@ i::before {
   content: '';
   width: 20px;
   height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   margin-right: 15px;
   border-radius: 50%;
   background-color: #fff;
@@ -421,6 +423,8 @@ i::before {
 .remainders ul li .key {
   width: 15px; 
   height: 15px;
+  min-width: 15px; 
+  min-height: 15px;
 }
 .remainders ul li > .blue {
   border-left: 2px solid var(--blue-color);
@@ -531,7 +535,7 @@ i::before {
 .projects table tr td:last-child {
   border-right: 1px solid #eee;
 }
-.projects table tr:hover td {
+.projects table tbody tr:hover td {
   background-color: #faf7f7;
 }
 /* End Projects Table */
@@ -989,6 +993,10 @@ i::before {
   transform: translateY(-50%);
   font-size: 40px;
   opacity: .2;
+}
+.friends-page .friend > .between-flex > div {
+  display: flex; 
+  gap: 3px;
 }
 /* End Friends Page */
 /* Start Files Page */
