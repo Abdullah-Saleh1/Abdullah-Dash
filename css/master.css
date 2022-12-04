@@ -53,6 +53,8 @@ i::before {
 }
 .sidebar > h3 {
   margin-bottom: 50px;
+  position: sticky; 
+  top: 20px; 
 }
 .sidebar > h3:nth-of-type(2) {
   display: none;
@@ -77,6 +79,15 @@ i::before {
   height: 12px;
   border-radius: 50%;
   border: 4px solid #fff;
+}
+.sidebar > ul {
+  position: sticky; 
+  top: 43px; 
+}
+@media (min-width: 768px) {
+  .sidebar > ul {
+    top: 95px
+  }
 }
 .sidebar li a {
   transition: 0.3s; 
